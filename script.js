@@ -19,3 +19,15 @@ const response = fetch('https://jsonplaceholder.typicode.com/users')
     })
 
 
+const addPost = () => {
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        body: JSON.stringify({
+            userId: 3,
+            title: 'Titulo Teste',
+            body: 'Eu fui inserido'
+
+        })
+    })
+}
+
